@@ -1,8 +1,5 @@
-import 'dart:async';
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:urban_dictionary_wrapper/Widgets/alert_dialog.dart';
 
 class TopBar extends StatefulWidget {
   const TopBar({Key? key, this.searchShown = false, this.onSearchButtonPressed,this.onSearch})
@@ -49,6 +46,7 @@ class _TopBarState extends State<TopBar> {
                                   suffixIcon: IconButton(
                                       onPressed: () {
                                         setState(() {
+                                          _focusNode.unfocus();
                                           searchValue = "";
                                         });
                                       },
