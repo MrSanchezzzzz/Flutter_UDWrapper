@@ -27,7 +27,11 @@ class FavoritesPageState extends State<FavoritesPage>{
       });
     });
   }
-
+  void onFavoriteChanged(bool isFavorite){
+    setState(() {
+      getTerms();
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
