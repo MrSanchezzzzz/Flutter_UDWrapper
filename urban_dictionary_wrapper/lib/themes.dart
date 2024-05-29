@@ -22,6 +22,10 @@ class Themes {
           filled: true,
           fillColor: const Color.fromARGB(255, 16, 21, 27),
           contentPadding: const EdgeInsets.symmetric(horizontal: 8),
+          border: OutlineInputBorder(
+              borderSide:
+              const BorderSide(color: Colors.white, style: BorderStyle.solid),
+              borderRadius: BorderRadius.circular(16)),
           focusedBorder: OutlineInputBorder(
               borderSide:
               const BorderSide(color: Colors.white, style: BorderStyle.solid),
@@ -59,7 +63,7 @@ class Themes {
     brightness: Brightness.light,
     primaryColor: const Color.fromARGB(255, 27, 41, 54).toMaterialColor(),
     backgroundColor: const Color.fromARGB(192, 27, 41, 54).toMaterialColor(),
-    scaffoldBackgroundColor: Colors.white,
+    scaffoldBackgroundColor: Colors.white70,
     appBarTheme: AppBarTheme(
         backgroundColor:
         const Color.fromARGB(255, 27, 41, 54).toMaterialColor(),
